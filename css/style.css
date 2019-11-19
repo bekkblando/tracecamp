@@ -610,13 +610,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
 }
 
-#curriculum {
+.curriculum {
   background: #fff;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
 
-#curriculum .box {
+.curriculum .box {
   padding: 50px 20px;
   margin-bottom: 50px;
   text-align: center;
@@ -626,12 +626,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
 }
 
-#curriculum .box li {
+.curriculum .box li {
   text-align: left;
   margin-top: 5px;
 }
 
-#curriculum .icon {
+.curriculum .icon {
   position: absolute;
   top: -36px;
   left: calc(50% - 36px);
@@ -648,40 +648,40 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #2dc997;
 }
 
-#curriculum .icon a {
+.curriculum .icon a {
   display: inline-block;
 }
 
-#curriculum .icon i {
+.curriculum .icon i {
   color: #fff;
   font-size: 24px;
 }
 
-#curriculum .box:hover .icon {
+.curriculum .box:hover .icon {
   background: #fff;
   border: 2px solid #2dc997;
 }
 
-#curriculum .box:hover .icon i {
+.curriculum .box:hover .icon i {
   color: #2dc997;
 }
 
-#curriculum .box:hover .icon a {
+.curriculum .box:hover .icon a {
   color: #2dc997;
 }
 
-#curriculum .title {
+.curriculum .title {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
-#curriculum .title a {
+.curriculum .title a {
   color: #111;
 }
 
-#curriculum .description {
+.curriculum .description {
   font-size: 14px;
   line-height: 24px;
 }
