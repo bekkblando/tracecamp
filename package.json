@@ -70,6 +70,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "presurge": "cross-env IS_SURGE=true GATSBY_DB_NODES=loki gatsby build",
+    "deploy": "gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION --paths \"/*\"",
     "surge": "surge --domain $(node -p \"require('./package.json').name\").surge.sh --project ./public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },

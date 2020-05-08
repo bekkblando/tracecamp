@@ -19,6 +19,10 @@ phases:
     commands:
       - npm run-script build
 
+  post_build:
+    commands:
+      - 'npm run-script deploy'
+
 cache:
   paths:
     - './node_modules/**/*'

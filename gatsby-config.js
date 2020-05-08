@@ -1,6 +1,7 @@
 const path = require('path');
 require('dotenv');
 const packageJson = require('./package.json');
+const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://tracecamp.com`);
 
 const config = {
   siteMetadata: {
@@ -29,6 +30,16 @@ const config = {
         name: 'courses',
         path: `${__dirname}/src`,
       },
+    },
+      {
+        resolve: `gatsby-plugin-s3`,
+        options: {
+            bucketName: process.env.TARGET_BUCKET_NAME || "tracecamp.com",
+            region: process.env.AWS_REGION || "us-west-2",
+            protocol: targetAddress.protocol.slice(0, -1),
+            hostname: targetAddress.hostname,
+            acl: null
+        },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
