@@ -1,0 +1,19 @@
+/* custom base styles */
+
+/* custom highlight */
+::selection {
+  /* bg-indigo-100 */
+  background-color: #b4c6fc;
+}
+
+/* default highlight */
+/* https://stackoverflow.com/a/16094931 */
+pre::selection {
+  background-color: #accef7;
+}
+code::selection {
+  background-color: #accef7;
+}
+
+/* custom scrollbar */
+/* https://gist.github.com/spemer/a0e218bbb45433bd611e68446523a00b */
