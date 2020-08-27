@@ -1,6 +1,6 @@
 ---
 category: Instructor
-index: 6
+index: 7
 author: Steve Russell
 authorGitHub: https://github.com/stphnrssll
 authorAvatar: https://github.com/stphnrssll.png
