@@ -66,7 +66,7 @@ export default function Instructors() {
             completion of your project.
           </p>
         </div>
-        <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+        <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-4 lg:max-w-none">
           {data.instructors.edges.map((edge) => (
             <Instructor key={edge.node.id} edge={edge} />
           ))}

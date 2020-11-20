@@ -10,9 +10,7 @@ export default function Splash() {
   const data = useStaticQuery(graphql`
     query {
       splash: file(
-        relativePath: {
-          eq: "content/images/demo-day/IMG_0592.jpg"
-        }
+        relativePath: { eq: "content/images/splash.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 2000) {
@@ -255,7 +253,7 @@ export default function Splash() {
           </div>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-3/4">
         <Img
           fluid={data.splash.childImageSharp.fluid}
           className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
