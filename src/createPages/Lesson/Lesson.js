@@ -22,7 +22,7 @@ export const query = graphql`
     ) {
       frontmatter {
         title
-        featuredImage {
+        thumbnail {
           childImageSharp {
             fluid(maxWidth: 1440) {
               ...GatsbyImageSharpFluid_withWebp

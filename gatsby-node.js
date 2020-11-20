@@ -172,8 +172,8 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             frontmatter {
               title
-              isPublished
-              featuredImage {
+              published
+              thumbnail {
                 childImageSharp {
                   fixed(width: 239, height: 135) {
                     base64
@@ -194,9 +194,9 @@ exports.createPages = async ({ graphql, actions }) => {
 
   for (const edge of courses.data.allMarkdownRemark.edges) {
     const courseSlug = edge.node.fields.slug;
-    const isPublished = edge.node.frontmatter.isPublished;
+    const published = edge.node.frontmatter.published;
 
-    if (isPublished !== false) {
+    if (published !== false) {
       const lessons = await graphql(`
       {
         allMarkdownRemark(
@@ -206,7 +206,7 @@ exports.createPages = async ({ graphql, actions }) => {
               pageType: { eq: "lesson" }
             }
             frontmatter: {
-              isPublished: {
+              published: {
                 ne: false
               }
             }
@@ -237,10 +237,10 @@ exports.createPages = async ({ graphql, actions }) => {
         course: {
           title: edge.node.frontmatter.title,
           courseSlug: courseSlug,
-          featuredImage: {
+          thumbnail: {
             childImageSharp: {
               fixed:
-                edge.node.frontmatter.featuredImage
+                edge.node.frontmatter.thumbnail
                   .childImageSharp.fixed,
             },
           },

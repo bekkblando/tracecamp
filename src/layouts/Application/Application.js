@@ -415,7 +415,7 @@ export default function Application({ children, nav }) {
                 <Img
                   className="absolute inset-0"
                   fixed={
-                    nav.course.featuredImage.childImageSharp
+                    nav.course.thumbnail.childImageSharp
                       .fixed
                   }
                 />
