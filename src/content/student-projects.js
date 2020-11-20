@@ -13,6 +13,84 @@ const camps = [
 
 // list of projects
 export default [
+  // summer 2020
+
+  {
+    name: 'Devin Narula',
+    githubName: 'devinnarula',
+    camp: summer_2020,
+    projectTitle: 'Lets Draw!',
+    url: 'https://github.com/devinnarula/painting-site',
+  },
+  {
+    name: 'Joshua Little',
+    githubName: 'mjtlittle',
+    camp: summer_2020,
+    projectTitle: 'Chess Board',
+    url: 'https://github.com/Mjtlittle/react-chess',
+  },
+  {
+    name: 'Mari Kilgus',
+    githubName: 'mkilgus5750',
+    camp: summer_2020,
+    projectTitle: 'Absolutely Flutiful E-Commerce',
+    url: 'https://github.com/mkilgus5750/ecommerce-v2',
+  },
+  {
+    name: 'Jacob Madsen',
+    githubName: 'jacobrocks1212',
+    camp: summer_2020,
+    projectTitle: 'Sozo Personal Fitness Website',
+    url:
+      'https://github.com/jacobrocks1212/sozo-personal-fitness',
+  },
+  {
+    name: 'Rohit Mallick',
+    githubName: 'RoMallick',
+    camp: summer_2020,
+    projectTitle: 'Ethical Frameworks',
+    url:
+      'https://github.com/RoMallick/ethicalFramework_React',
+  },
+  {
+    name: 'MacKenzie Fisher',
+    githubName: 'mackenziemfisher',
+    camp: summer_2020,
+    projectTitle: 'Hivemind',
+    url:
+      'https://github.com/mackenziemfisher/officialhivemind',
+  },
+  {
+    name: 'Tahj Anderson',
+    githubName: 'TahjAnderson23',
+    camp: summer_2020,
+    projectTitle: 'Spotify Vinyl Player',
+    url: 'https://github.com/TahjAnderson23/VinylPlayer',
+  },
+  {
+    name: 'Aaron Woolfolk',
+    githubName: 'LeopoldJr',
+    camp: summer_2020,
+    projectTitle: 'COVID Calculator',
+    url: 'https://github.com/LeopoldJr/covid-calculator',
+  },
+  {
+    name: 'Carissa Wu',
+    githubName: 'carissa2019281',
+    camp: summer_2020,
+    projectTitle: 'Everything On Coffee',
+    url: 'https://github.com/carissa2019281/coffeesite',
+  },
+  {
+    name: 'Shreya Thammana',
+    githubName: 'shreyat16',
+    camp: summer_2020,
+    projectTitle: 'Choose Your Own Adventure',
+    url: 'https://github.com/shreyat16/adventure-site',
+  },
+
+  // older projects
+
   {
     name: 'Angela Guo',
     githubName: 'freelilian',
@@ -127,82 +205,4 @@ export default [
     projectTitle: 'Media library',
     url: 'http://media-library.surge.sh/',
   },
-
-  // summer 2020
-
-  {
-    name: 'Devin Narula',
-    githubName: 'devinnarula',
-    camp: summer_2020,
-    projectTitle: 'Lets Draw!',
-    url: 'https://github.com/devinnarula/painting-site',
-  },
-  {
-    name: 'Joshua Little',
-    githubName: 'mjtlittle',
-    camp: summer_2020,
-    projectTitle: 'Chess Board',
-    url: 'https://github.com/Mjtlittle/react-chess',
-  },
-  {
-    name: 'Mari Kilgus',
-    githubName: 'mkilgus5750',
-    camp: summer_2020,
-    projectTitle: 'Absolutely Flutiful E-Commerce',
-    url: 'https://github.com/mkilgus5750/ecommerce-v2',
-  },
-  {
-    name: 'Jacob Madsen',
-    githubName: 'jacobrocks1212',
-    camp: summer_2020,
-    projectTitle: 'Sozo Personal Fitness Website',
-    url:
-      'https://github.com/jacobrocks1212/sozo-personal-fitness',
-  },
-  {
-    name: 'Rohit Mallick',
-    githubName: 'RoMallick',
-    camp: summer_2020,
-    projectTitle: 'Ethical Frameworks',
-    url:
-      'https://github.com/RoMallick/ethicalFramework_React',
-  },
-  {
-    name: 'MacKenzie Fisher',
-    githubName: 'mackenziemfisher',
-    camp: summer_2020,
-    projectTitle: 'Hivemind',
-    url:
-      'https://github.com/mackenziemfisher/officialhivemind',
-  },
-  {
-    name: 'Tahj Anderson',
-    githubName: 'TahjAnderson23',
-    camp: summer_2020,
-    projectTitle: 'Spotify Vinyl Player',
-    url: 'https://github.com/TahjAnderson23/VinylPlayer',
-  },
-  {
-    name: 'Aaron Woolfolk',
-    githubName: 'LeopoldJr',
-    camp: summer_2020,
-    projectTitle: 'COVID Calculator',
-    url: 'https://github.com/LeopoldJr/covid-calculator',
-  },
-  {
-    name: 'Carissa Wu',
-    githubName: 'carissa2019281',
-    camp: summer_2020,
-    projectTitle: 'Everything On Coffee',
-    url: 'https://github.com/carissa2019281/coffeesite',
-  },
-  {
-    name: 'Shreya Thammana',
-    githubName: 'shreyat16',
-    camp: summer_2020,
-    projectTitle: 'Choose Your Own Adventure',
-    url: 'https://github.com/shreyat16/adventure-site',
-  },
-].sort(
-  (a, b) => camps.indexOf(b.camp) - camps.indexOf(a.camp),
-);
+];
