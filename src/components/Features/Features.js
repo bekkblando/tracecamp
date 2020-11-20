@@ -6,7 +6,9 @@ export default function Features() {
   const data = useStaticQuery(graphql`
     query {
       splash: file(
-        relativePath: { eq: "content/images/demo-day/IMG_0642.jpg" }
+        relativePath: {
+          eq: "content/images/demo-day/IMG_0642.jpg"
+        }
       ) {
         childImageSharp {
           fluid(maxWidth: 752) {
@@ -73,7 +75,7 @@ export default function Features() {
                 What Trace Camp can give you
               </h4>
               <p className="mt-3 text-lg leading-7 text-gray-500">
-                Trace Camp exposes Clemson students to web
+                Trace Camp exposes students to web
                 development skills while fostering a
                 community of passionate programmers. At the
                 same time, students learn by creating
@@ -161,13 +163,12 @@ export default function Features() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg leading-6 font-medium text-gray-900">
-                        Clemson community
+                        Learning community
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
-                        Join a community of Clemson students
-                        who are creative, focused, and
-                        driven to make the most of their
-                        summer.
+                        Join a community of students who are
+                        creative, focused, and driven to
+                        make the most of their summer.
                       </p>
                     </div>
                   </div>

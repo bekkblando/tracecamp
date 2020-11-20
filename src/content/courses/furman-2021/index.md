@@ -8,12 +8,12 @@ date: Winter 2021
 duration: 1 week
 thumbnail: louis-reed-JeInkKlI2Po-unsplash.jpg
 technologies:
+- Intro to Programming
+- Web Fundamentals
 - HTML
 - CSS
 - JavaScript
 - React
-- Hooks
-- working with APIs
 ---
 
 Duis consectetur sunt proident adipisicing dolore irure exercitation et aliqua Lorem nisi dolor. Minim consectetur aute excepteur duis nostrud consectetur. Mollit ullamco exercitation est consequat dolore labore Lorem fugiat non Lorem id anim id sit. Ad amet laborum consectetur ex labore consectetur dolor. Ex sunt nostrud velit nulla duis.
