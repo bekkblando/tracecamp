@@ -40,7 +40,7 @@ export default function Stats() {
                       className += ' border-b sm:border-r';
                     //middle stats
                     else if (
-                      index ==
+                      index !=
                       content.stats.length - 1
                     )
                       className +=
