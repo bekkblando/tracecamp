@@ -1,14 +1,13 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Tracecamp" src="./public/icons/icon-256x256.png" width="60" />
+  <a href="https://tracecamp.com">
+    <img alt="Tracecamp" src="./src/components/TigerPaw/tiger-paw-container-01.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
   Trace Camp Website
 </h1>
 
-This the source for the Trace Camp official website.
+This the source for the official Trace Camp website.
 
 ## Running the Site
 
@@ -32,7 +31,7 @@ This the source for the Trace Camp official website.
 
 ---
 
-**Gatsby Boilerplate**
+## Gatsby Boilerplate
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -115,11 +114,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
