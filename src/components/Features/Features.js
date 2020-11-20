@@ -6,7 +6,7 @@ export default function Features() {
   const data = useStaticQuery(graphql`
     query {
       splash: file(
-        relativePath: { eq: "images/demo-day/IMG_0642.jpg" }
+        relativePath: { eq: "content/images/demo-day/IMG_0642.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 752) {

@@ -1,31 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Transition from 'repositories/Transition/Transition';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Logo from 'components/Logo/Logo';
 
+import content from '../../content';
+
 export default function Splash() {
   const data = useStaticQuery(graphql`
     query {
-      course: allMarkdownRemark(
-        filter: { fields: { pageType: { eq: "course" } } }
-        sort: {
-          fields: frontmatter___createdAt
-          order: DESC
-        }
-        limit: 1
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-          }
-        }
-      }
-
       splash: file(
-        relativePath: { eq: "images/demo-day/IMG_0592.jpg" }
+        relativePath: {
+          eq: "content/images/demo-day/IMG_0592.jpg"
+        }
       ) {
         childImageSharp {
           fluid(maxWidth: 2000) {
@@ -35,29 +22,48 @@ export default function Splash() {
       }
     }
   `);
-  const courseUrl = 'https://forms.gle/3tJ3Yk5iDcDZZVSV8'; // `/courses/${data.course.edges[0].node.fields.slug}/`
 
-  const [isSidebarOpen, setIsSidebarOpen] = React.useState(
-    false,
-  );
-  const [
-    ,
-    // hideSidebarMenu
-    setHideSidebarMenu,
-  ] = React.useState(true);
+  // methods for controlling sidebar state
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [_, setSidebarHidden] = useState(true);
 
   const openSidebar = () => {
-    setIsSidebarOpen(true);
-    setHideSidebarMenu(false);
+    setSidebarOpen(true);
+    setSidebarHidden(false);
   };
 
   const closeSidebar = () => {
-    setIsSidebarOpen(false);
+    setSidebarOpen(false);
   };
 
   const hideSidebar = () => {
-    setHideSidebarMenu(true);
+    setSidebarHidden(true);
   };
+
+  const MobileSideBar = () => (
+    <div className="flex items-center -mr-2 md:hidden">
+      <button
+        type="button"
+        className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
+        aria-label="Open sidebar"
+        onClick={openSidebar}
+      >
+        <svg
+          className="w-6 h-6"
+          stroke="currentColor"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+  );
 
   return (
     <div
@@ -66,6 +72,7 @@ export default function Splash() {
     >
       <div className="max-w-screen-xl mx-auto ">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          {/* slant overlay over the image */}
           <svg
             className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
             fill="currentColor"
@@ -85,28 +92,7 @@ export default function Splash() {
                       alt="Trace Camp Logo"
                     />
                   </a>
-                  <div className="flex items-center -mr-2 md:hidden">
-                    <button
-                      type="button"
-                      className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500"
-                      aria-label="Open sidebar"
-                      onClick={openSidebar}
-                    >
-                      <svg
-                        className="w-6 h-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                  <MobileSideBar />
                 </div>
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4">
@@ -134,12 +120,6 @@ export default function Splash() {
                 >
                   Contact
                 </a>
-                {/* <Link
-                  to={courseUrl}
-                  className="ml-8 font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-900 focus:outline-none focus:text-indigo-700"
-                >
-                  Log in
-                </Link> */}
               </div>
             </nav>
           </div>
@@ -161,7 +141,7 @@ export default function Splash() {
             leave="duration-100 ease-in"
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
-            show={isSidebarOpen}
+            show={sidebarOpen}
             onExited={hideSidebar}
           >
             <div className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden">
@@ -223,19 +203,10 @@ export default function Splash() {
                       Contact
                     </a>
                   </div>
-                  <div>
-                    {/* <Link
-                      to={courseUrl}
-                      className="block w-full px-5 py-3 font-medium text-center text-indigo-600 transition duration-150 ease-in-out bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700"
-                    >
-                      Log in
-                    </Link> */}
-                  </div>
                 </div>
               </div>
             </div>
           </Transition>
-
           <div className="max-w-screen-xl px-4 mx-auto mt-10 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
@@ -248,7 +219,7 @@ export default function Splash() {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 {/* Our focus is teaching practical programming
                 with hands-on web development. Our
-                curriculums are open source and supported by
+                curriculums are open source and supported by  
                 a passionate community of students. */}
                 {/* We've picked the best resources to help you
                 build web apps and our experienced
@@ -263,7 +234,7 @@ export default function Splash() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href={courseUrl}
+                    href={content.signupUrl}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
                   >
                     Get started
@@ -273,7 +244,7 @@ export default function Splash() {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.notion.so/Details-on-TRACE-Camp-5ceb8f8391134a618f7ca37d3a923732"
+                    href={content.detailsUrl}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 md:py-4 md:text-lg md:px-10"
                   >
                     Learn more

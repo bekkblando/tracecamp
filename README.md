@@ -1,12 +1,38 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Tracecamp" src="./public/icons/icon-256x256.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Trace Camp Website
 </h1>
+
+This the source for the Trace Camp official website.
+
+## Running the Site
+
+1. **Clone the repository.**
+
+    Clone the repository to your computer and enter the directory.
+
+2. **Install all required packages.**
+
+    Use either Yarn or Npm to install all of the packages. Yarn is the prefered method, as its faster and ensures a consistant installation.
+
+    `yarn` or `npm install`
+
+3. **Start developing.**
+
+    Run the develop script.
+
+    `yarn develop` or `npm run develop`
+
+    Afterwards the site should be running at `http://localhost:8000`.
+
+---
+
+**Gatsby Boilerplate**
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 

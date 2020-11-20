@@ -1,10 +1,10 @@
 import React from 'react';
 import mailtoLink from 'mailto-link';
+import content from '../../content';
 
 const minHeightStyle = {
   minHeight: '122px',
 };
-const supportEmail = 'bekkblando@gmail.com';
 
 export default function Contact() {
   const [name, setName] = React.useState('');
@@ -30,8 +30,11 @@ export default function Contact() {
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>821 McMillan Rd</p>
-                  <p>Clemson, SC 29631</p>
+                  {content.contact.address.map(
+                    (line, index) => (
+                      <p key={index}>{line}</p>
+                    ),
+                  )}
                 </dd>
               </div>
               <div className="mt-3">
@@ -51,7 +54,7 @@ export default function Contact() {
                     />
                   </svg>
                   <span className="ml-3">
-                    {supportEmail}
+                    {content.contact.email}
                   </span>
                 </dd>
               </div>
@@ -60,7 +63,7 @@ export default function Contact() {
               Looking for leadership?{' '}
               <a
                 href={mailtoLink({
-                  to: supportEmail,
+                  to: content.contact.email,
                   subject: 'Join Trace Camp Staff',
                 })}
                 className="font-medium text-gray-700 underline"
@@ -79,7 +82,7 @@ export default function Contact() {
                 event.preventDefault();
                 window.open(
                   mailtoLink({
-                    to: supportEmail,
+                    to: content.contact.email,
                     cc: email,
                     subject: 'Trace Camp',
                     body: message,

@@ -17,6 +17,7 @@ const {
   createRemoteFileNode,
 } = require('gatsby-source-filesystem');
 
+// makes it so imports can be absolute relative to src along with node_modules
 // https://www.gatsbycentral.com/enable-absolute-imports-for-gatsby-v2
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   actions.setWebpackConfig({

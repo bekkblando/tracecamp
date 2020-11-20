@@ -30,7 +30,7 @@ function SEO({
         }
         socialCard: file(
           relativePath: {
-            eq: "images/demo-day/IMG_0592.jpg"
+            eq: "content/images/demo-day/IMG_0592.jpg"
           }
         ) {
           childImageSharp {
