@@ -28,7 +28,11 @@ export default function Stats() {
           <div className="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <dl
-                className={`bg-white rounded-lg shadow-lg sm:grid sm:grid-cols-${content.stats.length}`}
+                className={`bg-white rounded-lg shadow-lg sm:grid ${
+                  content.stats.length === 3
+                    ? 'sm:grid-cols-3'
+                    : 'sm:grid-cols-4'
+                }`}
               >
                 {content.stats.map(
                   ([top, bottom], index) => {

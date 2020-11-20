@@ -14,6 +14,9 @@ module.exports = {
   variants: {
     borderWidth: ['responsive', 'first', 'hover', 'focus'],
   },
+
+  // purging done in postcss
+  purge: false,
   plugins: [
     // https://tailwindui.com/documentation
     require('@tailwindcss/ui')({

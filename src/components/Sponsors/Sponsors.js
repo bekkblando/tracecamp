@@ -33,7 +33,7 @@ export default function Sponsors() {
         </p>
         {/* container */}
         <div
-          className={`mt-6 grid grid-cols-${sponsers.length} gap-0.5 lg:mt-8`}
+          className={`mt-6 grid grid-cols-3 gap-0.5 lg:mt-8`}
         >
           {sponsers.map(({ name, image, url }, index) => (
             <a
