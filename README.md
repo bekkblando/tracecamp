@@ -7,7 +7,7 @@
   Trace Camp Website
 </h1>
 
-This the source for the official Trace Camp website.
+This is the source for the official Trace Camp website.
 
 ## Running the Site
 
