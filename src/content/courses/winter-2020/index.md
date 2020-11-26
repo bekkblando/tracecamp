@@ -2,7 +2,7 @@
 published: true
 createdAt: 2020-11-15 12:00
 title: Modern React Programming with Hooks
-description: This course covers the fundamentals of React through the creation of daily assignmnets and a final project, all while using React Hooks.
+description: This course covers the fundamentals of React through the creation of daily assignments and a final project, all while using React Hooks.
 location: Clemson University
 date: Dec 28 - Jan 3
 duration: 1 week
