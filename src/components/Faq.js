@@ -28,7 +28,7 @@ const Link = ({ href, children }) => (
   </a>
 );
 
-export default function Faq() {
+const Faq = () => {
   return (
     <div id="faq" className="bg-white">
       <div className="max-w-screen-xl px-4 pt-12 pb-16 mx-auto sm:pt-16 sm:pb-20 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
@@ -98,4 +98,6 @@ export default function Faq() {
       </div>
     </div>
   );
-}
+};
+
+export default Faq;

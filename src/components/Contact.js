@@ -1,6 +1,6 @@
 import React from 'react';
 import mailtoLink from 'mailto-link';
-import content from '../../content';
+import content from '../content';
 
 const minHeightStyle = {
   minHeight: '122px',

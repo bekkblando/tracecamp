@@ -1,6 +1,6 @@
 import React from 'react';
 import Transition from 'repositories/Transition/Transition';
-import MinimalFooter from 'components/MinimalFooter/MinimalFooter';
+import MinimalFooter from 'components/MinimalFooter';
 import Logo from 'components/Logo/Logo';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';

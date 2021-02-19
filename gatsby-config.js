@@ -1,7 +1,9 @@
 const path = require('path');
 require('dotenv');
 const packageJson = require('./package.json');
-const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://tracecamp.com`);
+const targetAddress = new URL(
+  process.env.TARGET_ADDRESS || `https://tracecamp.com`,
+);
 
 const config = {
   siteMetadata: {
@@ -31,15 +33,16 @@ const config = {
         path: `${__dirname}/src`,
       },
     },
-      {
-        resolve: `gatsby-plugin-s3`,
-        options: {
-            bucketName: process.env.TARGET_BUCKET_NAME || "tracecamp.com",
-            region: process.env.AWS_REGION || "us-west-2",
-            protocol: targetAddress.protocol.slice(0, -1),
-            hostname: targetAddress.hostname,
-            acl: null
-        },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName:
+          process.env.TARGET_BUCKET_NAME || 'tracecamp.com',
+        region: process.env.AWS_REGION || 'us-west-2',
+        protocol: targetAddress.protocol.slice(0, -1),
+        hostname: targetAddress.hostname,
+        acl: null,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -51,7 +54,7 @@ const config = {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
               // The property ID; the tracking code won't be generated without it
-              trackingId: "UA-73112318-3",
+              trackingId: 'UA-73112318-3',
             },
           },
           `gatsby-remark-prismjs`,
@@ -77,7 +80,7 @@ const config = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         // This path is relative to the root of the site.
-        icon: `src/components/TigerPaw/tiger-paw-container-01.svg`,
+        icon: `src/components/Logo/TigerPaw/tiger-paw-container-01.svg`,
       },
     },
     `gatsby-plugin-sitemap`,

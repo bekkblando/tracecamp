@@ -20,8 +20,9 @@ export default function Features() {
   `);
 
   return (
-    // md:mb-16 lg:mb-0
-    <div className="md:pb-16 lg:pb-0 bg-gray-50">
+    // ! pt-2 and md:pt-10 are to fix the removal of the courses section
+    // ! remove when added back or change in future
+    <div className="md:pb-16 lg:pb-0 bg-gray-50 md:pt-10">
       <div className="py-16 bg-gray-50 overflow-hidden lg:py-24">
         <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
           <svg
@@ -58,15 +59,15 @@ export default function Features() {
           </svg>
 
           {/* <div className="relative">
-          <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-            A better way to send money
-          </h3>
-          <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Possimus magnam voluptatum
-            cupiditate veritatis in, accusamus quisquam.
-          </p>
-        </div> */}
+            <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+              A better way to send money
+            </h3>
+            <p className="mt-4 max-w-3xl mx-auto text-center text-xl leading-7 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Possimus magnam voluptatum
+              cupiditate veritatis in, accusamus quisquam.
+            </p>
+          </div> */}
 
           {/* mt-12 lg:mt-24 */}
           <div className="relative lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
