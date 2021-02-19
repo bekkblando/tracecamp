@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://tracecamp.com">
-    <img alt="Tracecamp" src="./src/components/TigerPaw/tiger-paw-container-01.svg" width="60" />
+    <img alt="Tracecamp" src="./src/components/Logo/TigerPaw/tiger-paw-container-01.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -13,21 +13,21 @@ This is the source for the official Trace Camp website.
 
 1. **Clone the repository.**
 
-    Clone the repository to your computer and enter the directory.
+   Clone the repository to your computer and enter the directory.
 
 2. **Install all required packages.**
 
-    Use either Yarn or Npm to install all of the packages. Yarn is the prefered method, as its faster and ensures a consistant installation.
+   Use either Yarn or Npm to install all of the packages. Yarn is the prefered method, as its faster and ensures a consistant installation.
 
-    `yarn` or `npm install`
+   `yarn` or `npm install`
 
 3. **Start developing.**
 
-    Run the develop script.
+   Run the develop script.
 
-    `yarn develop` or `npm run develop`
+   `yarn develop` or `npm run develop`
 
-    Afterwards the site should be running at `http://localhost:8000`.
+   Afterwards the site should be running at `http://localhost:8000`.
 
 ---
 
