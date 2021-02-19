@@ -51,25 +51,27 @@ exports.onCreateNode = async ({
   createNodeId,
 }) => {
   const { createNode, createNodeField } = actions;
-  const { internal, fileAbsolutePath } = node;
+  const { internal, fileAbsolutePath: file_path } = node;
 
   // add custom fields
   if (internal.type === 'MarkdownRemark') {
-    const fileName = path.basename(fileAbsolutePath, '.md');
+    const filename = path.basename(file_path, '.md');
+    const path_parts = path
+      .normalize(file_path) // normalize the path to platform
+      .split(path.sep); // split based on plaform
 
-    const splitPath = fileAbsolutePath.split(path.sep);
-    const courseIndex = splitPath.indexOf('courses');
-
-    if (courseIndex !== -1) {
+    // if (courseIndex !== -1) {
+    if (path_parts.includes('courses')) {
+      const courseIndex = path_parts.indexOf('courses');
       let course;
       // markdown nested in a folder
-      if (fileName === splitPath[splitPath.length - 2]) {
-        course = splitPath.slice(courseIndex + 1, -2);
+      if (filename === path_parts[path_parts.length - 2]) {
+        course = path_parts.slice(courseIndex + 1, -2);
       } else {
-        course = splitPath.slice(courseIndex + 1, -1);
+        course = path_parts.slice(courseIndex + 1, -1);
       }
 
-      if (fileName === 'index') {
+      if (filename === 'index') {
         createNodeField({
           node,
           name: 'slug',
@@ -84,7 +86,7 @@ exports.onCreateNode = async ({
         createNodeField({
           node,
           name: 'slug',
-          value: `${course}/${fileName}`,
+          value: `${course}/${filename}`,
         });
         createNodeField({
           node,
@@ -94,12 +96,13 @@ exports.onCreateNode = async ({
       }
     }
 
-    const projectIndex = splitPath.indexOf('projects');
-    if (projectIndex !== -1) {
+    // const projectIndex = path_parts.indexOf('projects');
+    // if (projectIndex !== -1) {
+    if (path_parts.includes('projects')) {
       createNodeField({
         node,
         name: 'slug',
-        value: `${fileName}`,
+        value: `${filename}`,
       });
       createNodeField({
         node,
@@ -108,14 +111,15 @@ exports.onCreateNode = async ({
       });
     }
 
-    const instructorIndex = splitPath.indexOf(
-      'instructors',
-    );
-    if (instructorIndex !== -1) {
+    // const instructorIndex = path_parts.indexOf(
+    //   'instructors',
+    // );
+    // if (instructorIndex !== -1) {
+    if (path_parts.includes('instructors')) {
       createNodeField({
         node,
         name: 'slug',
-        value: `${fileName}`,
+        value: `${filename}`,
       });
       createNodeField({
         node,
@@ -202,7 +206,7 @@ exports.createPages = async ({ graphql, actions }) => {
         allMarkdownRemark(
           filter: {
             fields: {
-              slug: { glob: "${courseSlug}${path.sep}*" }
+              slug: { glob: "${courseSlug}/*" }
               pageType: { eq: "lesson" }
             }
             frontmatter: {
