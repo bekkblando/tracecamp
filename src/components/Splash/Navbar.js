@@ -6,6 +6,7 @@ export const links = [
   { label: 'Home', href: '#splash' },
   //{ label: 'Courses', href: '#courses' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Instructors', href: '#instructors' },
   { label: 'Contact', href: '#contact' },
 ];
 
