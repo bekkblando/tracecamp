@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Transition from 'repositories/Transition/Transition';
 import Logo from 'components/Logo/Logo';
 
-const links = [
+export const links = [
   { label: 'Home', href: '#splash' },
-  { label: 'Courses', href: '#courses' },
+  //{ label: 'Courses', href: '#courses' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];
