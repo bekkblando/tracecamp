@@ -3,16 +3,105 @@ const winter_2018 = 'Winter 2018';
 const summer_2019 = 'Summer 2019';
 const winter_2019 = 'Winter 2019';
 const summer_2020 = 'Summer 2020';
+const winter_2020 = 'Winter 2020';
 
 const camps = [
   winter_2018,
   summer_2019,
   winter_2019,
   summer_2020,
+  winter_2020,
 ];
 
 // list of projects
 export default [
+  // winter 2020
+
+  {
+    name: 'Carter Janse',
+    githubName: 'cjanse',
+    camp: winter_2020,
+    projectTitle: 'Geography Game',
+    url: 'https://geography-game.vercel.app/',
+  },
+  {
+    name: 'Emma Sargent',
+    githubName: 'esargen',
+    camp: winter_2020,
+    projectTitle: 'Palettable',
+    url: 'https://rijks-palette-explorer.vercel.app/',
+  },
+  {
+    name: 'Alyssa Williams',
+    githubName: 'LisLis294',
+    camp: winter_2020,
+    projectTitle: 'Search My Bookshelf',
+    url: 'https://search-my-bookshelf.vercel.app/',
+  },
+  {
+    name: 'Corey Andrews',
+    githubName: 'corey-andrews',
+    camp: winter_2020,
+    projectTitle: 'Hunt The Wumpus',
+    url: 'https://hunt-the-wumpus-react.vercel.app/',
+  },
+  {
+    name: 'Corey Fuller',
+    githubName: 'coreyFuller',
+    camp: winter_2020,
+    projectTitle: 'Github Reporting',
+    url: 'https://gitub-reporting.vercel.app/',
+  },
+  {
+    name: 'Jacob Mcfadyen',
+    githubName: 'jsmcfadyen',
+    camp: winter_2020,
+    projectTitle: 'Web Synth',
+    url: 'https://web-synth.jsmcfadyen.vercel.app/',
+  },
+  {
+    name: 'Teja Guruvelli',
+    githubName: 'tj-guruvelli',
+    camp: winter_2020,
+    projectTitle: 'McLaren Wiki',
+    url: 'https://trace-camp-final-project.vercel.app/',
+  },
+  // {
+  //   name: 'Cameron Martin',
+  //   githubName: 'cmarti8548',
+  //   camp: winter_2020,
+  //   projectTitle: "Morgan's Designs",
+  //   url: 'https://cmarti8548.github.io/',
+  // },
+  {
+    name: 'Colton Smith & Jushawn Macon',
+    githubName: 'coltonhs',
+    camp: winter_2020,
+    projectTitle: 'Restaurant Picker',
+    url: 'https://restaurantpicker.vercel.app/',
+  },
+  {
+    name: 'Mackenzie Fisher',
+    githubName: 'mackenziemfisher',
+    camp: winter_2020,
+    projectTitle: '5 Minute Pianist',
+    url: 'https://5minpianist.vercel.app/',
+  },
+  {
+    name: 'Daniel Ball',
+    githubName: 'dwball-png',
+    camp: winter_2020,
+    projectTitle: 'Museam for You',
+    url: 'https://museum-for-you.vercel.app/',
+  },
+  // {
+  //   name: "Don'te Dwight",
+  //   githubName: 'ddwight416',
+  //   camp: winter_2020,
+  //   projectTitle: 'Matching Game',
+  //   url: 'https://matching-game-eta.vercel.app/',
+  // },
+
   // summer 2020
 
   {
