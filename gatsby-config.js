@@ -7,7 +7,7 @@ const targetAddress = new URL(
 
 const config = {
   siteMetadata: {
-    title: `Trace Camp eLearning`,
+    title: `Trace Camp`,
     description: `Our focus is teaching practical programming with hands-on web development. Our curated curriculums and experienced instructors will give you the tools you need to build your passion project.`,
     // siteUrl: `http://tracecamp.com/`,
     siteUrl: process.env.IS_SURGE
