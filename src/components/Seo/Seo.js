@@ -10,14 +10,14 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({
+const SEO = ({
   description,
   lang,
   meta,
   title,
   titleTemplate,
   // url,
-}) {
+}) => {
   const { site, socialCard } = useStaticQuery(
     graphql`
       query {
@@ -163,7 +163,7 @@ function SEO({
       <meta name="theme-color" content="#6875f5" /> */}
     </Helmet>
   );
-}
+};
 
 SEO.defaultProps = {
   lang: `en`,

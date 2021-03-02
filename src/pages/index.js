@@ -25,7 +25,7 @@ export default function IndexPage() {
       <Stats />
       <Projects />
       <Faq />
-      <Cta />
+      {/* <Cta /> */}
       <Instructors />
       <Contact />
       <Sponsors />

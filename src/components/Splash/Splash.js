@@ -62,7 +62,7 @@ export default function Splash() {
                 give you the tools you need to build your
                 passion project.
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href={content.signupUrl}
@@ -81,7 +81,7 @@ export default function Splash() {
                     Learn more
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
