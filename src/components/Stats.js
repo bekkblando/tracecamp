@@ -28,30 +28,23 @@ export default function Stats() {
           <div className="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <dl
-                className={`bg-white rounded-lg shadow-lg sm:grid ${
-                  content.stats.length === 3
-                    ? 'sm:grid-cols-3'
-                    : 'sm:grid-cols-4'
-                }`}
+                className={`bg-white rounded-lg shadow-lg grid grid-cols-3`}
               >
                 {content.stats.map(
                   ([top, bottom], index) => {
                     let className =
-                      'flex flex-col p-6 text-center border-gray-100 sm:border-0';
+                      'flex flex-col p-6 text-center border-gray-100 border-0';
 
                     // first stat
-                    if (index == 0)
-                      className += ' border-b sm:border-r';
+                    if (index == 0) className += 'border-r';
                     //middle stats
                     else if (
                       index !=
                       content.stats.length - 1
                     )
-                      className +=
-                        ' border-b border-t sm:border-r sm:border-l';
+                      className += 'border-r border-l';
                     //last stat
-                    else
-                      className += ' border-t sm:border-l';
+                    else className += 'border-l';
 
                     // render
                     return (
@@ -59,12 +52,12 @@ export default function Stats() {
                         className={className}
                         key={index}
                       >
-                        <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
-                          {bottom}
-                        </dt>
-                        <dd className="order-1 text-5xl font-extrabold leading-none text-indigo-600">
+                        <div className="text-2xl sm:text-5xl font-extrabold leading-none text-indigo-600">
                           {top}
-                        </dd>
+                        </div>
+                        <div className="mt-2 text-sm sm:text-lg font-medium leading-6 text-gray-500">
+                          {bottom}
+                        </div>
                       </div>
                     );
                   },

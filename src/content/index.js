@@ -13,7 +13,7 @@ module.exports = {
   },
   stats: [
     ['100%', 'Online'],
-    ['70+', 'Graduates'],
-    ['1', 'Week'],
+    ['100+', 'Graduates'],
+    ['2', 'Annual Camps'],
   ],
 };
