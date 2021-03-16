@@ -1,6 +1,6 @@
 ---
 category: Previous Instructor
-index: 6
+index: 100
 author: Shawn Picardy
 authorGitHub: https://github.com/Sisyphus34
 authorAvatar: https://github.com/Sisyphus34.png

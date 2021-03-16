@@ -1,6 +1,6 @@
 ---
 category: Previous Instructor
-index: 8
+index: 100
 author: Raf DeJesus
 authorGitHub: https://github.com/rafael09ed
 authorAvatar: https://github.com/rafael09ed.png
