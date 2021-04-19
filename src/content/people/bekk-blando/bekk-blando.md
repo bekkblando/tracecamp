@@ -1,5 +1,5 @@
 ---
-category: Previous Instructor
+category: Former Instructor
 index: 100
 author: Bekk Blando
 authorGitHub: https://github.com/bekkblando

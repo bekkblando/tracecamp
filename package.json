@@ -38,6 +38,7 @@
     "react-dom": "^16.12.0",
     "react-helmet-async": "^1.0.5",
     "react-https-redirect": "^1.1.0",
+    "react-icons": "^4.2.0",
     "react-transition-group": "^4.3.0",
     "react-use": "^14.2.0",
     "react-use-fuzzy": "^1.0.4",
@@ -66,7 +67,7 @@
   "scripts": {
     "build": "cross-env GATSBY_DB_NODES=loki gatsby build",
     "postbuild": "rimraf public/robots.txt",
-    "develop": "cross-env GATSBY_DB_NODES=loki GATSBY_HOT_LOADER=fast-refresh GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "develop": "cross-env GATSBY_DB_NODES=loki GATSBY_HOT_LOADER=fast-refresh gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

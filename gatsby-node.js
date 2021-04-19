@@ -115,7 +115,7 @@ exports.onCreateNode = async ({
     //   'instructors',
     // );
     // if (instructorIndex !== -1) {
-    if (path_parts.includes('instructors')) {
+    if (path_parts.includes('people')) {
       createNodeField({
         node,
         name: 'slug',
@@ -124,7 +124,7 @@ exports.onCreateNode = async ({
       createNodeField({
         node,
         name: 'pageType',
-        value: `instructor`,
+        value: 'person',
       });
     }
   }

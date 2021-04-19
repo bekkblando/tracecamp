@@ -1,5 +1,5 @@
 ---
-category: Instructor
+category: Organizer
 index: 2
 author: Steve Russell
 authorGitHub: https://github.com/stphnrssll

@@ -1,5 +1,5 @@
 ---
-category: Previous Instructor
+category: Former Instructor
 index: 100
 author: Raf DeJesus
 authorGitHub: https://github.com/rafael09ed
