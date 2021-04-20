@@ -6,7 +6,7 @@ description: This course covers the ins and outs of web programming using React.
 location: More details coming soon
 date: December
 duration: 1 week
-thumbnail: ./thomas-peham-gU5PDhBjpl8-unsplash.jpg
+thumbnail: ./justin-kauffman-fpoHihXiMhg-unsplash.jpg
 technologies:
   - HTML
   - CSS

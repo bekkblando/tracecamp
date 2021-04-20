@@ -6,7 +6,7 @@ description: This course covers the fundamentals of web design through the creat
 location: Online
 date: July 26 - August 13
 duration: 3 weeks
-thumbnail: ./chuttersnap-5Yo1P9ErikM-unsplash.jpg
+thumbnail: ./james-harrison-vpOeXr5wmR4-unsplash.jpg
 technologies:
   - HTML
   - CSS
