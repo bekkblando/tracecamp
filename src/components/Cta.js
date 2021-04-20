@@ -59,7 +59,7 @@ export function CtaCentered() {
               Apply Now
             </a>
           </div>
-          <div className="ml-3 inline-flex">
+          {/* <div className="ml-3 inline-flex">
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@ export function CtaCentered() {
             >
               Join the Discord
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

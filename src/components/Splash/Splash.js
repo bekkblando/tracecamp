@@ -71,7 +71,7 @@ export default function Splash() {
                     Apply Now
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function Splash() {
                   >
                     Join the Discord
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
