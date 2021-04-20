@@ -1,19 +1,18 @@
 ---
 published: true
-createdAt: 2020-11-15 12:00
-title: Modern React Programming with Hooks
-description: This course covers the fundamentals of React through the creation of daily assignments and a final project, all while using React Hooks.
-location: Clemson University
-date: Dec 28 - Jan 3
+createdAt: 2020-12-15 12:00
+title: Introduction to React Development
+description: This course covers the ins and outs of web programming using React. Everyday, assignments will be provided to build up your professional web design skills.
+location: More details coming soon
+date: December
 duration: 1 week
-thumbnail: ./tatiana-rodriguez-TxzjVxnWYq4-unsplash.jpg
+thumbnail: ./thomas-peham-gU5PDhBjpl8-unsplash.jpg
 technologies:
-- HTML
-- CSS
-- JavaScript
-- React
-- Hooks
-- working with APIs
+  - HTML
+  - CSS
+  - JavaScript
+  - React
+  - Hooks
 ---
 
 Duis consectetur sunt proident adipisicing dolore irure exercitation et aliqua Lorem nisi dolor. Minim consectetur aute excepteur duis nostrud consectetur. Mollit ullamco exercitation est consequat dolore labore Lorem fugiat non Lorem id anim id sit. Ad amet laborum consectetur ex labore consectetur dolor. Ex sunt nostrud velit nulla duis.

@@ -43,12 +43,19 @@ const Faq = () => {
               funding from our{' '}
               <Link href="#sponsors">sponsors</Link>.
             </FAQ> */}
-            <FAQ question="Where can I find the details about the bootcamp schedule?">
-              More details about the weekly bootcamp
-              schedule and tracks can be found{' '}
-              <Link href={content.detailsUrl}>here</Link>.
-              Feel free to send us an email if you have any
-              questions.
+            <FAQ question="When is the next camp?">
+              The next camp will be held from{' '}
+              <i>July 26th</i> to <i>August 13th</i>. It
+              will be held online so anyone can join. Click
+              the button below to apply. Also, be sure to
+              drop in the Discord server to get upcoming
+              camp information.
+            </FAQ>
+            <FAQ question="Where will the camp be held?">
+              Because of covid, we have moved all of our
+              opperations online. We have used this format
+              for the last couple camps and have found it
+              worked really well.
             </FAQ>
             <FAQ question="Can I suggest a course?">
               Sure! We would love to know what students want
@@ -59,11 +66,6 @@ const Faq = () => {
               We do not have any recordings available to the
               public at the moment. However, students
               accepted within the camp have access.
-            </FAQ>
-            <FAQ question="What has changed because of covid?">
-              We have moved completely online for the time
-              being. Last summers camp was in this format
-              and worked really well.
             </FAQ>
             {/* Unused questions (some of these were commented out in the old code) */}
             {/* <FAQ question="Do these camps cost anything?">

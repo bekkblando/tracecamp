@@ -1,19 +1,18 @@
 ---
 published: true
-createdAt: 2021-1-1 12:00
-title: Welcome to Web Programming in React 
-description: This course starts with a review of HTML, CSS, and JavaScript, and dives into the React framework to create beautiful and interactive websites.
-location: Furman University
-date: Winter 2021
-duration: 1 week
-thumbnail: louis-reed-JeInkKlI2Po-unsplash.jpg
+createdAt: 2020-11-15 12:00
+title: Fundamentals of Web Design with React
+description: This course covers the fundamentals of web design through the creation of weekly assignments and a final project, all while using the industry standard, React Hooks.
+location: Online
+date: July 26 - August 13
+duration: 3 weeks
+thumbnail: ./chuttersnap-5Yo1P9ErikM-unsplash.jpg
 technologies:
-- Intro to Programming
-- Web Fundamentals
-- HTML
-- CSS
-- JavaScript
-- React
+  - HTML
+  - CSS
+  - JavaScript
+  - React
+  - Hooks
 ---
 
 Duis consectetur sunt proident adipisicing dolore irure exercitation et aliqua Lorem nisi dolor. Minim consectetur aute excepteur duis nostrud consectetur. Mollit ullamco exercitation est consequat dolore labore Lorem fugiat non Lorem id anim id sit. Ad amet laborum consectetur ex labore consectetur dolor. Ex sunt nostrud velit nulla duis.

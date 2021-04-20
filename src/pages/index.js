@@ -19,13 +19,13 @@ export default function IndexPage() {
     <React.Fragment>
       <Seo title="Home" />
       <Splash />
-      {/* <Courses /> */}
+      <Courses />
       <Features />
       <Testimonials />
       <Stats />
       <Projects />
       <Faq />
-      {/* <Cta /> */}
+      <Cta />
       <Instructors />
       <Contact />
       <Sponsors />

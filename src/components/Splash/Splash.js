@@ -58,30 +58,30 @@ export default function Splash() {
                 they work. */}
                 Our focus is teaching practical programming
                 with hands-on web development. Our curated
-                curriculums and experienced instructors will
+                curriculum and experienced instructors will
                 give you the tools you need to build your
                 passion project.
               </p>
-              {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href={content.signupUrl}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
                   >
-                    Get started
+                    Apply Now
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={content.detailsUrl}
+                    href={content.discordLink}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-indigo-700 transition duration-150 ease-in-out bg-indigo-100 border border-transparent rounded-md hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 md:py-4 md:text-lg md:px-10"
                   >
-                    Learn more
+                    Join the Discord
                   </a>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

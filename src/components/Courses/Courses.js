@@ -65,12 +65,9 @@ export default function Courses() {
           </h2>
           <p className="max-w-2xl mx-auto mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
             Learn immediately useful technologies while
-            building relevant industry skills. We are
-            currently focusing on web development,
-            specifically React.
+            building relevant industry skills and projects.
           </p>
         </div>
-        {/* lg:max-w-none */}
         <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-2 lg:max-w-screen-md">
           {courses.map((course, index) => (
             <CourseCard {...course} key={index} />
