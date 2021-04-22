@@ -20,8 +20,8 @@ export default function IndexPage() {
       <Seo title="Home" />
       <Splash />
       <Features />
-      <Courses />
       <Testimonials />
+      <Courses />
       <Stats />
       <Projects />
       <Faq />
