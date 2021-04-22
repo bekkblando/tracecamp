@@ -2,8 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { FaGithub } from 'react-icons/fa';
-import { IoGlobeOutline } from 'react-icons/io';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 // https://stackoverflow.com/a/24378353
@@ -32,7 +31,7 @@ const Instructor = ({ title, name, bio, image }) => {
           <h3 className="text-xl leading-7 font-semibold text-gray-900">
             {name}
           </h3>
-          <p className="mt-1 text-sm leading-2 text-gray-500">
+          <p className="mt-1 text-sm leading-2 text-gray-500 align-center flex-grow">
             {bio}
           </p>
 
@@ -45,7 +44,7 @@ const Instructor = ({ title, name, bio, image }) => {
               }}
             >
               <FaGithub />
-              <IoGlobeOutline />
+              <FaGlobe />
             </IconContext.Provider>
           </div>
         </div>

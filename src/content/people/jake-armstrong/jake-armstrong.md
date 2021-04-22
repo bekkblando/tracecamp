@@ -1,5 +1,5 @@
 ---
-category: Instructor
+category: Former Instructor
 index: 3
 author: Jake Armstrong
 authorGitHub: https://github.com/jlarmstrongiv
