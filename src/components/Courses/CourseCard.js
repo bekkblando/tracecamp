@@ -21,7 +21,7 @@ const CourseCard = ({
   return (
     <div
       id={slug}
-      className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+      className="flex flex-col overflow-hidden rounded-lg shadow-lg max-w-xl"
     >
       <div className="flex-shrink-0">
         <Img
@@ -31,11 +31,9 @@ const CourseCard = ({
       </div>
       <div className="flex flex-col justify-between flex-1 p-6 bg-white">
         <div className="flex-1">
-          <div className="mt-2">
-            <p className="text-sm leading-5 text-gray-500">
-              {location}
-            </p>
-          </div>
+          <p className="text-sm leading-5 text-gray-500">
+            {location}
+          </p>
 
           <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
             {title}

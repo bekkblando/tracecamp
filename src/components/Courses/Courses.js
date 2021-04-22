@@ -53,7 +53,7 @@ export default function Courses() {
   return (
     <div
       id="courses"
-      className="relative px-4 pt-16 pb-20 bg-gray-50 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
+      className="relative px-4 pt-16 pb-16 bg-gray-50 sm:px-6 lg:pt-24 lg:pb-20 lg:px-8"
     >
       <div className="absolute inset-0">
         <div className="bg-white h-1/3 sm:h-2/3"></div>
@@ -68,7 +68,7 @@ export default function Courses() {
             building relevant industry skills and projects.
           </p>
         </div>
-        <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-2 lg:max-w-screen-md">
+        <div className="flex justify-center spacing-x-5 max-w-lg mx-auto mt-12 lg:max-w-screen-md">
           {courses.map((course, index) => (
             <CourseCard {...course} key={index} />
           ))}
