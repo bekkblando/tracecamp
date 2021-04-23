@@ -15,8 +15,8 @@ function formatUrl(url) {
 
 const Instructor = ({ title, name, bio, image }) => {
   return (
-    <div className="w-full lg:w-1/3">
-      <div className="m-3 h-48 rounded-lg overflow-hidden shadow-md grid grid-cols-3">
+    <div className="w-full lg:w-1/2 xl:w-1/3">
+      <div className="m-3 h-72 sm:h-56 lg:h-48 rounded-lg overflow-hidden shadow-md grid grid-cols-3">
         <div className="col-span-1">
           <Img
             className="h-full object-cover"
@@ -24,18 +24,18 @@ const Instructor = ({ title, name, bio, image }) => {
             fluid={image.childImageSharp.fluid}
           />
         </div>
-        <div className="col-span-2 flex flex-col relative h-100 p-4">
+        <div className="col-span-2 flex justify-center flex-col relative h-100 p-4">
           <p className="text-sm leading-5 text-gray-500">
             {title}
           </p>
           <h3 className="text-xl leading-7 font-semibold text-gray-900">
             {name}
           </h3>
-          <p className="mt-1 text-sm leading-2 text-gray-500 align-center flex-grow">
+          <p className="mt-1 text-sm leading-2 text-gray-500">
             {bio}
           </p>
 
-          <div className="m-4 absolute bottom-0 left-0 flex flex-row space-x-3">
+          {/* <div className="m-4 absolute top-0 right-0 flex flex-row space-x-3">
             <IconContext.Provider
               value={{
                 size: '1.5rem',
@@ -46,7 +46,7 @@ const Instructor = ({ title, name, bio, image }) => {
               <FaGithub />
               <FaGlobe />
             </IconContext.Provider>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
