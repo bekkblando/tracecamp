@@ -1,7 +1,7 @@
 ---
-category: Previous Instructor
+category: Instructor
 index: 7
-author: Bekk Blando
+author: Alyssa Williams
 authorGitHub: https://github.com/bekkblando
 authorAvatar: https://github.com/bekkblando.png
 authorWebsite: https://www.bekkblando.com/

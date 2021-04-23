@@ -1,6 +1,6 @@
 ---
-category: Previous Instructor
-index: 9
+category: Former Instructor
+index: 100
 author: Dee Boyd
 authorGitHub: https://github.com/damaliboyd
 authorAvatar: https://github.com/damaliboyd.png
