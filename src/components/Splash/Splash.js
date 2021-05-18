@@ -66,9 +66,12 @@ export default function Splash() {
                 <div className="rounded-md shadow">
                   <a
                     href={content.signupUrl}
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
+                    className="relative flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline md:py-4 md:text-lg md:px-10"
                   >
                     Apply Now
+                    <div className="absolute top-0 right-0 transform translate-x-5 -translate-y-4 rotate-3 bg-red-500 px-2 py-0.5 break-normal text-white text-sm rounded-xl">
+                      May 31st Deadline
+                    </div>
                   </a>
                 </div>
                 {/* <div className="mt-3 sm:mt-0 sm:ml-3">
