@@ -1,6 +1,6 @@
 ---
 category: Instructor
-index: 5
+index: 6
 author: Joshua Little
 authorGitHub: https://github.com/mjtlittle
 authorAvatar: https://github.com/mjtlittle.png

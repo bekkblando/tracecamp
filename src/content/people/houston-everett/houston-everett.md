@@ -1,6 +1,6 @@
 ---
 category: Instructor
-index: 4
+index: 7
 author: Houston Everett
 authorGitHub: https://github.com/weslev
 authorAvatar: https://github.com/weslev.png
