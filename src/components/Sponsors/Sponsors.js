@@ -3,6 +3,7 @@ import React from 'react';
 import clemson_logo from './clemson_logo.svg';
 import trace_logo from './trace_logo.png';
 import itsab_logo from './itsab_logo.svg';
+import clemson_libraries_logo from './clemson_libraries.png';
 
 const sponsers = [
   {
@@ -21,6 +22,11 @@ const sponsers = [
     image: trace_logo,
     url: 'https://computing.clemson.edu/trace/',
   },
+  {
+    name: 'Clemson Libraries',
+    image: clemson_libraries_logo,
+    url: 'https://libraries.clemson.edu/',
+  },
 ];
 
 export default function Sponsors() {
@@ -33,7 +39,7 @@ export default function Sponsors() {
         </p>
         {/* container */}
         <div
-          className={`mt-6 grid grid-cols-3 gap-0.5 lg:mt-8`}
+          className={`mt-6 grid grid-cols-4 gap-0.5 lg:mt-8`}
         >
           {sponsers.map(({ name, image, url }, index) => (
             <a
