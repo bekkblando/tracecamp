@@ -4,6 +4,7 @@ const summer_2019 = 'Summer 2019';
 const winter_2019 = 'Winter 2019';
 const summer_2020 = 'Summer 2020';
 const winter_2020 = 'Winter 2020';
+const summer_2021 = 'Summer 2021';
 
 const camps = [
   winter_2018,
@@ -15,6 +16,58 @@ const camps = [
 
 // list of projects
 export default [
+  // summer 2021
+
+  {
+    name: 'Teja Guruvelli',
+    githubName: 'tj-guruvelli',
+    camp: summer_2021,
+    projectTitle: 'Movie Database',
+    url: 'https://movie-canva.surge.sh/',
+  },
+  {
+    name: 'Miller Christan',
+    githubName: 'millerchristen',
+    camp: summer_2021,
+    projectTitle: 'Piano',
+    url: 'https://famous-mind.surge.sh/',
+  },
+  {
+    name: 'Nolan',
+    githubName: 'Dzimidas',
+    camp: summer_2021,
+    projectTitle: 'Daily Dashboard',
+    url: 'https://daily-dashboard.surge.sh/',
+  },
+  {
+    name: 'Natalie',
+    githubName: 'StiltonBree',
+    camp: summer_2021,
+    projectTitle: 'Rock Paper Scissors',
+    url: 'https://ripe-lettuce.surge.sh/',
+  },
+  {
+    name: 'Jonathan Daniel',
+    githubName: 'JDaniel41',
+    camp: summer_2021,
+    projectTitle: 'COVID Dashboard',
+    url: 'https://jdaniel41.github.io/trace-project/',
+  },
+  {
+    name: 'Kaden R',
+    githubName: 'kadenrettig',
+    camp: summer_2021,
+    projectTitle: '"A Friendly Exchange"',
+    url: 'https://friendly-doddle.surge.sh/',
+  },
+  {
+    name: 'Lucas Boyer',
+    githubName: 'lrboyer',
+    camp: summer_2021,
+    projectTitle: 'Crypto Prices Dashboard',
+    url: 'https://crypto-prices-lrboyer-v3.surge.sh/',
+  },
+
   // winter 2020
 
   {
