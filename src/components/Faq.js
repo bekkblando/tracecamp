@@ -44,14 +44,10 @@ const Faq = () => {
               <Link href="#sponsors">sponsors</Link>.
             </FAQ> */}
             <FAQ question="When is the next camp?">
-              The next camp will be held from{' '}
-              <i>July 26th</i> to <i>August 13th</i>. It
-              will be held online so anyone can join.
-              <a href="#splash">
-                Click the button at the top
-              </a>{' '}
-              to apply. Also, be sure to drop in the Discord
-              server to get upcoming camp information.
+              We are currently in the process of planning
+              our next camp. Currently we are looking to
+              hold another camp this winter as we have in
+              the past, but this is not set in stone yet.
             </FAQ>
             <FAQ question="Where will the camp be held?">
               Because of covid, we have moved all of our

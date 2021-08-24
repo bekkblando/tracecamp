@@ -1,7 +1,6 @@
 module.exports = {
   siteName: 'Trace Camp',
-  signupUrl:
-    'https://docs.google.com/forms/d/e/1FAIpQLSfRk91bZs8PW0Cjezdd-qwmuVPqvUG2zUR12SIT9dA2vCzQAw/viewform?usp=sf_link',
+  signupUrl: '',
   discordLink: 'https://discord.gg/z5qFUKJkwU',
   // detailsUrl:
   //   'https://www.notion.so/Details-of-Trace-Camp-Winter-2020-1fb942fefba842308d36a70046ee33fb',

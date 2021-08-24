@@ -61,7 +61,7 @@ export default function Courses() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-            Upcoming bootcamps
+            Recent bootcamps
           </h2>
           <p className="max-w-2xl mx-auto mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
             Learn immediately useful technologies while
